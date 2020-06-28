@@ -1,0 +1,24 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v7.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>
+
+<div class="share-page">
+  <p class="share-text">Do you like it? &rarr;</p>
+  <div class="fb-like"
+       data-href="{{site.url}}{{page.url}}"
+       data-width=""
+       data-layout="button_count"
+       data-action="like"
+       data-size="small"
+       data-share="false"></div>
+</div>
