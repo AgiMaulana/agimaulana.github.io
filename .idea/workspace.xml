@@ -76,7 +76,6 @@
       <change afterPath="$PROJECT_DIR$/_includes/hyvor_comments.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/product.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/product_definition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/share_page.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/shop_breadcrumb.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/twitter_follow_button.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/about-me.html" afterDir="false" />
@@ -86,7 +85,6 @@
       <change afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/gallery.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/product.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/search.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_posts/2020-06-28-self-testing-code.md" afterDir="false" />
@@ -227,9 +225,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/github_star_button.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/github_star_button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/share_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/share_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
@@ -8326,7 +8325,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593319315534</updated>
-      <workItem from="1593319316800" duration="8034000" />
+      <workItem from="1593319316800" duration="9344000" />
     </task>
     <servers />
   </component>
@@ -8375,10 +8374,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="94" y="127" width="1720" height="853" key="VCS.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1593329150087" />
-    <state x="652" y="138" width="959" height="831" key="find.popup" timestamp="1593329003785">
+    <state x="652" y="138" width="959" height="831" key="find.popup" timestamp="1593359490652">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="652" y="138" width="959" height="831" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593329003785" />
+    <state x="652" y="138" width="959" height="831" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593359490652" />
     <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1593329132835">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
