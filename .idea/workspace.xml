@@ -71,7 +71,6 @@
       <change afterPath="$PROJECT_DIR$/_includes/gallery_breadcrumb.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/github_follow_button.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/github_fork_button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/github_star_button.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_includes/hyvor_comments.html" afterDir="false" />
@@ -86,7 +85,6 @@
       <change afterPath="$PROJECT_DIR$/_layouts/contact.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_layouts/product.html" afterDir="false" />
@@ -228,7 +226,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/github_star_button.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/github_star_button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
@@ -237,7 +238,6 @@
       <change beforePath="$PROJECT_DIR$/build/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SECURITY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/about/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
@@ -8222,8 +8222,6 @@
       <change beforePath="$PROJECT_DIR$/build/assets/bower_components/typewrite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bower_components/typewrite/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/bower_components/typewrite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bower_components/typewrite/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/bower_components/typewrite/src/typewrite.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bower_components/typewrite/src/typewrite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/css/main.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/img/gallery/mountains/1-thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/gallery/mountains/1-thumbnail.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/img/gallery/mountains/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/gallery/mountains/1.jpg" afterDir="false" />
@@ -8272,39 +8270,21 @@
       <change beforePath="$PROJECT_DIR$/build/assets/img/zoom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/zoom.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/assets/js/mode-switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/mode-switcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/categories/guides/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/categories/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/categories/jekyll/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/tags/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/blog/tags/jekyll.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/bower.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/contact/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/devlopr.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/devlopr.gemspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/docker-compose-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/docker-compose-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/feed.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gallery/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/gallery/mountains.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/get-started/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/nginx/html/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/html/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshot2.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshots/dark_devlopr.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/dark_devlopr.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshots/devlopr.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/devlopr.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshots/hyvor.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/hyvor.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/screenshots/light_devlopr.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/light_devlopr.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/shop/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/styleguide/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/unit test/2020/06/27/self-testing-code/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8323,7 +8303,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_includes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -8332,6 +8312,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes" />
       <recent name="$PROJECT_DIR$/_posts" />
     </key>
   </component>
@@ -8345,7 +8326,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593319315534</updated>
-      <workItem from="1593319316800" duration="7179000" />
+      <workItem from="1593319316800" duration="8034000" />
     </task>
     <servers />
   </component>
@@ -8390,17 +8371,17 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="592" y="308" width="726" height="497" key="MultipleFileMergeDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1593328451277" />
-    <state x="94" y="127" width="1720" height="853" key="VCS.FileHistoryDialog" timestamp="1593327829990">
+    <state x="94" y="127" width="1720" height="853" key="VCS.FileHistoryDialog" timestamp="1593329150087">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="94" y="127" width="1720" height="853" key="VCS.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1593327829990" />
-    <state x="652" y="138" width="959" height="831" key="find.popup" timestamp="1593326184586">
+    <state x="94" y="127" width="1720" height="853" key="VCS.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1593329150087" />
+    <state x="652" y="138" width="959" height="831" key="find.popup" timestamp="1593329003785">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="652" y="138" width="959" height="831" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593326184586" />
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1593328339212">
+    <state x="652" y="138" width="959" height="831" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593329003785" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1593329132835">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593328339212" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1593329132835" />
   </component>
 </project>
