@@ -332,6 +332,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
@@ -340,6 +341,16 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+  <script src="node_modules/jspdf/dist/jspdf.min.js"></script>
+
+  <script type="text/javascript">
+    let doc = new jsPDF();
+    doc.html(document.body, {
+      callback: function (doc) {
+        doc.save();
+      }
+    });
+  </script>
 </body>
 
 </html>
