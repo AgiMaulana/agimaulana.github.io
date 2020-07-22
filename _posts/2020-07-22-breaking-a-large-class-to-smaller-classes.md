@@ -26,6 +26,7 @@ By breaking the large class into smaller classes. The benefits:
 
 ## Principle
     “Make the change easy, then make the easy change” - Kent Beck
+    
 Move in tiny steps with several connected aims: 
 1. Run compiling and the tests at every step
 2. If a change causes any tests to fail, we able to fix them instantly
