@@ -71,6 +71,4 @@ Move in tiny steps with several connected aims:
 
 [step-2]: https://martinfowler.com/articles/class-too-large/File-loading-code-diagram-01-v2-small.png "Analyse relationship between methods"
 
-[step-3] "Modify the methods that are staying behind"
-
 [clare-sudbary]: https://martinfowler.com/articles/class-too-large.html
