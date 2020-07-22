@@ -4,7 +4,7 @@ title:  "Self-testing code"
 summary: Writing test after writing code
 author: Agi Maulana
 date: '2020-06-27 12:50:00 +0000'
-category: Unit Test
+category: testing
 thumbnail: /assets/img/posts/code.jpg
 ---
 Martin Fowler on his [website][martin-fowler-website] explains about self-testing code. According to his explanation,
