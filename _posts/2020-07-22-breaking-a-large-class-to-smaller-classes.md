@@ -5,7 +5,7 @@ summary: Smaller class can be clearer context, easier to maintain
 author: Agi Maulana
 date: '2020-07-22 6:00:00 +0000'
 category: refactoring
-thumbnail: /assets/img/posts/code.jpg
+thumbnail: /assets/img/posts/refactoring-thumbnail.jpg
 ---
 In Justika engineering team we have an agenda in every week, Tech Talk, one by one from us in turns speaking about tech, as much as possible the topic is beneficial for our team.
 
