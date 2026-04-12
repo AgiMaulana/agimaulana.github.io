@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogList from '../../islands/BlogList';
+---
+
+<BaseLayout title="Blog - Agi Maulana" description="Read my latest blog posts about Android development, mobile architecture, and engineering practices.">
+  <section class="pt-24 pb-16">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-bold mb-4 opacity-0 animate-fade-in">Blog</h1>
+        <p class="text-xl text-[var(--text-secondary)] mb-12 opacity-0 animate-slide-up stagger-1">
+          Thoughts on mobile development, engineering best practices, and lessons learned building apps at scale.
+        </p>
+
+        <div class="text-sm text-[var(--text-muted)] mb-8 opacity-0 animate-slide-up stagger-1">
+          <span>Writing on </span>
+          <a href="https://medium.com/@agimaulana" target="_blank" rel="noopener" class="text-[var(--accent)] hover:underline">Medium</a>
+        </div>
+
+        <BlogList client:load />
+
+        <div class="mt-12 text-center opacity-0 animate-slide-up stagger-5">
+          <a href="https://medium.com/@agimaulana" target="_blank" rel="noopener" class="btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2  0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            View All on Medium
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
