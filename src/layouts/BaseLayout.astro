@@ -15,7 +15,7 @@ interface Props {
 
 const { 
   title, 
-  description = "Agi Maulana - Lead Mobile Engineer (Android + iOS). Expert in Kotlin, Jetpack Compose, Clean Architecture, and building world-class mobile apps at scale.",
+  description = "Agi Maulana - Senior Android Engineer & Mobile Engineering Leader. I build reliable Android products, lead engineering teams, and improve the systems that help engineers ship better software.",
   image = "/profile.png",
   url = Astro.url,
   type = "website",
@@ -25,7 +25,7 @@ const {
 
 const siteUrl = "https://agimaulana.github.io";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
-const fullTitle = title === "Agi Maulana - Lead Mobile Engineer" ? title : `${title} | Agi Maulana`;
+const fullTitle = title === "Agi Maulana - Senior Android Engineer & Mobile Engineering Leader" ? title : `${title} | Agi Maulana`;
 ---
 
 <!doctype html>
@@ -77,7 +77,7 @@ const fullTitle = title === "Agi Maulana - Lead Mobile Engineer" ? title : `${ti
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Agi Maulana",
-      "jobTitle": "Lead Mobile Engineer (Android + iOS)",
+      "jobTitle": "Senior Android Engineer & Mobile Engineering Leader",
       "url": siteUrl,
       "sameAs": [
         "https://github.com/AgiMaulana",
@@ -90,15 +90,18 @@ const fullTitle = title === "Agi Maulana - Lead Mobile Engineer" ? title : `${ti
         "url": "https://www.gooddoctor.co.id"
       },
       "knowsAbout": [
+        "Android Engineering",
         "Kotlin",
         "Jetpack Compose",
-        "Swift",
-        "Flutter",
         "Clean Architecture",
+        "Mobile Architecture",
+        "Technical Leadership",
+        "Engineering Leadership",
         "TDD",
         "CI/CD",
         "MCP Servers",
-        "Agentic AI"
+        "Agentic AI",
+        "Developer Tooling"
       ],
       "description": description,
       "address": {

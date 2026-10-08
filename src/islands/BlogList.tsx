@@ -27,18 +27,69 @@ export default function BlogList() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      try {
-        const res = await fetch(
-          'https://www.toptal.com/developers/feed2json/convert?url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40agimaulana&minify=on'
-        );
-        const data = await res.json();
-        setPosts((data.items || []).slice(0, 6));
-      } catch (e) {
-        setError('Failed to load posts');
-        console.error(e);
-      } finally {
-        setLoading(false);
+      const feedUrl = encodeURIComponent('https://medium.com/feed/@agimaulana');
+
+      // Try multiple free CORS-friendly RSS-to-JSON endpoints (no account needed)
+      const sources = [
+        {
+          url: `https://api.rss2json.com/v1/api.json?rss_url=${feedUrl}`,
+          parse: (data: Record<string, unknown>) => {
+            if (data.status !== 'ok') throw new Error(data.message as string);
+            return (data.items as Array<Record<string, unknown>>).map((item) => ({
+              title: item.title as string,
+              description: item.description as string,
+              url: item.link as string,
+              date_published: item.pubDate as string,
+              tags: (item.categories as string[]) || [],
+            }));
+          },
+        },
+        {
+          url: `https://api.allorigins.win/raw?url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40agimaulana`,
+          parse: (text: string) => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(text, 'text/xml');
+            const items = xml.querySelectorAll('item');
+            return Array.from(items).map((item) => ({
+              title: item.querySelector('title')?.textContent || '',
+              description: item.querySelector('description')?.textContent || '',
+              url: item.querySelector('link')?.textContent || '',
+              date_published: item.querySelector('pubDate')?.textContent || '',
+              tags: Array.from(item.querySelectorAll('category')).map((c) => c.textContent || ''),
+            }));
+          },
+        },
+      ];
+
+      let lastError: Error | unknown;
+
+      for (const source of sources) {
+        try {
+          const res = await fetch(source.url);
+          if (!res.ok) continue;
+
+          const contentType = res.headers.get('content-type') || '';
+          let posts: Post[];
+
+          if (contentType.includes('json')) {
+            const json = await res.json();
+            posts = source.parse(json);
+          } else {
+            const text = await res.text();
+            posts = source.parse(text);
+          }
+
+          setPosts(posts.slice(0, 6));
+          return;
+        } catch (e) {
+          lastError = e;
+          console.warn('Source failed:', source.url, e);
+        }
       }
+
+      console.error('All sources failed:', lastError);
+      setError('Failed to load posts');
+      setLoading(false);
     };
 
     fetchPosts();

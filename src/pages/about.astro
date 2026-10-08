@@ -1,95 +1,146 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const experience = [
+interface Job {
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  summary: string;
+  highlights: string[];
+  tech: string[];
+}
+
+const experience: Job[] = [
   {
     role: "Lead Mobile Engineer (Android + iOS)",
     company: "Good Doctor Technology",
     period: "April 2025 – Present",
     location: "Jakarta, Indonesia",
+    summary: "Leading the mobile engineering organization — 5 engineers across Android and iOS — with full ownership of strategy, process, and delivery.",
     highlights: [
-      "Lead entire mobile organization (5 engineers across Android & iOS) with full ownership of strategy, process, and delivery",
-      "Drove end-to-end Huawei partnership integration enabling Good Doctor app on AppGallery for 1.5M potential new users",
+      "Drove end-to-end Huawei partnership integration enabling the Good Doctor app on AppGallery for 1.5M potential new users",
       "Reduced mobile CI/CD queue times 40–60% through trunk-based development and optimized build pipelines",
-      "Established cross-platform best practices: shared retrospectives, Show & Tell sessions, and joint learning to eliminate silos"
+      "Established cross-platform engineering practices: shared retrospectives, Show & Tell sessions, and joint learning that eliminated platform silos",
+      "Created Skola — an internal marketplace for reusable AI Skills and MCP servers that helps engineers ramp up faster on agentic AI"
     ],
-    tech: ["Kotlin", "Swift", "Jetpack Compose", "CI/CD", "Codemagic", "GitHub Actions", "HMS Push Kit"]
+    tech: ["Kotlin", "Swift", "CI/CD", "Codemagic", "GitHub Actions", "HMS Push Kit", "AI Infrastructure"]
   },
   {
-    role: "Senior & Lead Android Engineer",
+    role: "Senior Android Engineer → Android Lead",
     company: "Good Doctor Technology",
     period: "July 2023 – April 2025",
     location: "Jakarta, Indonesia",
+    summary: "Led the complete ground-up rewrite of the flagship health-tech Android app, then built the engineering organization around it.",
     highlights: [
-      "Led complete ground-up rewrite of flagship health-tech app achieving 99.8% crash-free rate (top percentile)",
-      "Architected and delivered 100% Kotlin/Jetpack Compose solution in 7 months, enabling company to sunset expensive legacy contracts",
-      "Led cross-functional team of 7 engineers (in-house + contractors + vendors) through successful modular Clean Architecture implementation",
-      "Established TDD culture with 100% unit test coverage and rigorous Compose UI testing practices",
-      "Designed granular release-train process: 24h monitoring → staged rollout (10%→100%) → immediate halt on regressions"
+      "Architected and delivered a 100% Kotlin + Jetpack Compose rewrite in 7 months, reaching 99.8% crash-free shortly after release",
+      "Led a cross-functional team of 7 engineers (in-house + contractors + vendors) through modular Clean Architecture delivery",
+      "Established TDD culture: 100% unit test coverage, rigorous Compose UI testing, and release-train staging (10% → 100% with immediate halt on regressions)",
+      "Built the engineering system, not just the app: architecture conventions, technical-debt ownership, mentoring, and engineering rituals"
     ],
-    tech: ["Kotlin", "Jetpack Compose", "Clean Architecture", "Flow", "Hilt", "Room", "WorkManager", "TDD"]
+    tech: ["Kotlin", "Jetpack Compose", "Clean Architecture", "Hilt", "TDD", "CI/CD"]
   },
   {
     role: "Android Engineer (Technical Expert)",
     company: "Vidio",
     period: "October 2022 – July 2023",
     location: "Jakarta, Indonesia",
+    summary: "Owned core components of Indonesia's #1 OTT streaming app at tens of millions of monthly active users.",
     highlights: [
-      "Owned core components of Indonesia's #1 OTT/streaming Android app serving tens of millions of monthly active users",
-      "Designed and developed shared ExoPlayer-based core player library powering both mobile and Android TV applications",
-      "Refactored and stabilized large sections of Android TV app using Leanback UI framework",
-      "Practiced daily TDD, pair programming, and extreme programming to ensure high code quality"
+      "Designed and developed a shared ExoPlayer-based core player library powering both mobile and Android TV applications",
+      "Refactored and stabilized large sections of the Android TV app using the Leanback UI framework",
+      "Practiced daily TDD, pair programming, and extreme programming"
     ],
-    tech: ["Kotlin", "ExoPlayer", "Android TV", "Leanback", "Jetpack Compose", "TDD"]
+    tech: ["Kotlin", "ExoPlayer", "Android TV", "Leanback", "TDD"]
   },
   {
     role: "Software Engineer & Android Chapter Lead",
     company: "Justika",
     period: "July 2021 – October 2022",
     location: "Jakarta, Indonesia",
+    summary: "Founded and led the Android Chapter — from hiring to architecture to cross-platform delivery.",
     highlights: [
-      "Founded and led Android Chapter; built team of 2 (1 senior engineer + 1 intern) from the ground up",
-      "Owned complete hiring cycle: sourced, interviewed, and onboarded Android engineering talent",
-      "Led greenfield development of 'Justika Client Connect' app in Kotlin from inception to launch",
-      "Directed complete rewrite of flagship Lawyer Connect app to Flutter + Riverpod cross-platform architecture",
-      "Established mandatory code review process and engineering best practices across mobile organization"
+      "Built the Android team from the ground up and owned the complete hiring cycle",
+      "Led greenfield development of Client Connect in Kotlin from inception to launch",
+      "Directed the rewrite of the flagship Lawyer Connect app to Flutter + Riverpod",
+      "Established the code review process and engineering best practices across the mobile organization"
     ],
-    tech: ["Kotlin", "Flutter", "Riverpod", "RxJava", "TDD", "Mockk", "Espresso"]
+    tech: ["Kotlin", "Flutter", "Riverpod", "TDD", "Mockk", "Espresso"]
   },
   {
     role: "Junior Software Engineer",
     company: "Justika",
     period: "August 2019 – July 2021",
     location: "Jakarta, Indonesia",
+    summary: "Took full ownership of Lawyer Connect within months of joining — product, APIs, and architecture migration.",
     highlights: [
-      "Took full ownership of 'Lawyer Connect' Android app within months of joining as junior engineer",
-      "Designed and delivered production REST APIs using Django Rest Framework with full automated test coverage",
-      "Led migration from legacy Java to modern Kotlin + MVVM + RxJava architecture",
-      "Implemented VoIP calling (Twilio) and in-app chat (SendBird) with reliability fixes for navigation and lifecycle changes",
-      "Introduced monitoring (Sentry/Mixpanel) and feature-flag system for safe large-scale production refactors"
+      "Led the migration from legacy Java to Kotlin + MVVM + RxJava",
+      "Delivered production REST APIs (DRF) with full automated test coverage",
+      "Shipped VoIP calling (Twilio) and in-app chat (SendBird)",
+      "Introduced monitoring (Sentry/Mixpanel) and feature flags for safe large-scale refactors"
     ],
-    tech: ["Kotlin", "Java", "Python", "Django Rest Framework", "RxJava", "MVVM", "SendBird", "Twilio"]
+    tech: ["Kotlin", "Python", "Django Rest Framework", "RxJava", "MVVM"]
   }
 ];
 
-const skills = [
-  { name: "Kotlin", category: "languages" },
-  { name: "Jetpack Compose", category: "languages" },
-  { name: "Swift", category: "languages" },
-  { name: "Flutter", category: "languages" },
-  { name: "Python", category: "languages" },
-  { name: "Clean Architecture", category: "architecture" },
-  { name: "TDD", category: "architecture" },
-  { name: "MVVM", category: "architecture" },
-  { name: "Hilt/Dagger", category: "architecture" },
-  { name: "Agentic AI", category: "architecture" },
-  { name: "MCP Servers", category: "architecture" },
-  { name: "CI/CD", category: "tools" },
-  { name: "GitHub Actions", category: "tools" },
-  { name: "Codemagic", category: "tools" },
-  { name: "Technical Leadership", category: "leadership" },
-  { name: "Team Mentoring", category: "leadership" },
-  { name: "System Design", category: "leadership" }
+const principles = [
+  "Good architecture should make the next engineer faster.",
+  "Leadership should increase team autonomy, not dependency on the leader.",
+  "Processes should create visibility, not bureaucracy.",
+  "Technical debt needs ownership, not just documentation.",
+  "The best engineering standards are the ones the team can actually sustain."
+];
+
+const howILead = [
+  {
+    title: "Lead through systems, not micromanagement",
+    body: "Create processes, visibility, expectations, and feedback loops so engineers operate independently. Show & Tell is my example: lightweight ritual, real visibility, zero status-check theater."
+  },
+  {
+    title: "Give engineers ownership",
+    body: "Engineers propose solutions before they receive guidance. Delegating technical ownership builds decisions inside the team instead of handing them down."
+  },
+  {
+    title: "Make quality part of the system",
+    body: "TDD, Compose UI testing, architecture conventions, CI/CD, technical-debt ownership, release processes — so quality doesn't depend on heroics."
+  },
+  {
+    title: "Build culture deliberately",
+    body: "Psychological safety, recognition, feedback, and mentoring: where juniors ask questions freely and seniors keep growing."
+  }
+];
+
+const projects = [
+  {
+    name: "GooglePlayConsoleMcp",
+    url: "https://github.com/AgiMaulana/GooglePlayConsoleMcp",
+    problem: "Google Play publishing is slow, click-heavy, and error-prone.",
+    built: "MCP server covering publishing workflows: artifacts, release tracks, staged rollouts, testing, and Play Console operations."
+  },
+  {
+    name: "HuaweiAppGalleryMcp",
+    url: "https://github.com/AgiMaulana/HuaweiAppGalleryMcp",
+    problem: "AppGallery distribution has no automation story.",
+    built: "MCP server for app metadata, AAB uploads, phased and scheduled releases, testing, and reporting."
+  },
+  {
+    name: "CodemagicMcp",
+    url: "https://github.com/agimaulana/codemagicmcp",
+    problem: "CI/CD state lives in a dashboard engineers keep refreshing.",
+    built: "MCP server exposing builds, apps, artifacts, logs, environment variables, and caches to AI agents."
+  },
+  {
+    name: "SentryCompanionMcp",
+    url: "https://github.com/AgiMaulana/SentryCompanionMcp",
+    problem: "The official Sentry MCP doesn't cover everything needed in triage.",
+    built: "Companion MCP server adding tooling beyond the official integration."
+  },
+  {
+    name: "SlackBotMcp",
+    url: "https://github.com/AgiMaulana/SlackBotMcp",
+    problem: "AI agents can't act where teams actually communicate.",
+    built: "MCP server that sends bot messages, reads channels and threads inside AI workflows."
+  }
 ];
 
 const education = [
@@ -103,90 +154,61 @@ const education = [
     school: "Telkom University",
     degree: "Diploma-3 (D3) in Informatics Engineering",
     period: "2014 – 2017",
-    note: "Voluntary Organizing Committee: Hackathon Merdeka 2.0 | Capstone: Real-time parking availability system using CCTV + OpenCV"
-  }
-];
-
-const openSource = [
-  {
-    name: "GooglePlayConsoleMcp",
-    description: "Full Google Play Console automation - APK/AAB uploads, release tracks, closed testing, staged rollouts, and Android Vitals monitoring",
-    url: "https://github.com/AgiMaulana/GooglePlayConsoleMcp",
-    stars: "⭐ 2"
-  },
-  {
-    name: "CodemagicMcp", 
-    description: "Complete Codemagic CI/CD integration - trigger builds, manage apps, fetch artifacts & logs, environment variables, caches, and more",
-    url: "https://github.com/agimaulana/codemagicmcp",
-    stars: "⭐ 0"
-  },
-  {
-    name: "SentryCompanionMcp",
-    description: "Enhanced Sentry MCP with extra tools not available in the official integration",
-    url: "https://github.com/AgiMaulana/SentryCompanionMcp",
-    stars: "⭐ 1"
-  },
-  {
-    name: "HuaweiAppGalleryMcp",
-    description: "Integration with Huawei AppGallery for app distribution on Huawei devices",
-    url: "https://github.com/AgiMaulana/HuaweiAppGalleryMcp",
-    stars: "⭐ 1"
-  },
-  {
-    name: "SlackBotMcp",
-    description: "MCP server that brings Slack bot capabilities into AI workflows - send messages, read channels, and read threads",
-    url: "https://github.com/AgiMaulana/SlackBotMcp",
-    stars: "⭐ 0"
+    note: "Organizing Committee: Hackathon Merdeka 2.0 | Capstone: Real-time parking availability system using CCTV + OpenCV"
   }
 ];
 ---
 
-<BaseLayout title="About - Agi Maulana" description="Learn more about Agi Maulana, Lead Mobile Engineer specializing in Android and iOS development.">
+<BaseLayout title="About - Agi Maulana" description="Agi Maulana — Senior Android Engineer & Mobile Engineering Leader. Android at production scale, architecture, and the systems that help engineering teams ship faster.">
   <section class="pt-24 pb-16">
     <div class="container-custom">
       <div class="max-w-3xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8 opacity-0 animate-fade-in">About Me</h1>
-        
+        <h1 class="text-4xl font-bold mb-8 opacity-0 animate-fade-in">About</h1>
+
         <div class="flex flex-col md:flex-row gap-8 mb-12">
           <div class="flex-shrink-0">
-            <div class="w-32 h-32 rounded-2xl overflow-hidden border-2 border-[var(--border)] glow">
+            <div class="w-32 h-32 rounded-2xl overflow-hidden border border-[var(--border)]">
               <img src="/profile.png" alt="Agi Maulana" class="w-full h-full object-cover" />
             </div>
           </div>
           <div>
             <p class="text-lg text-[var(--text-secondary)] mb-6 opacity-0 animate-slide-up stagger-1">
-              I'm <strong class="text-[var(--text)]">Agi Maulana</strong>, a Lead Mobile Engineer (Android + iOS) based in Jakarta, Indonesia. 
-              Currently leading mobile engineering at Good Doctor Technology, managing a team of 5 engineers across both platforms.
+              I'm <strong class="text-[var(--text)]">Agi Maulana</strong>, a Senior Android Engineer &amp; Mobile Engineering Leader based in Jakarta, Indonesia. Currently leading mobile engineering at Good Doctor Technology.
             </p>
-            <p class="text-[var(--text-muted)] opacity-0 animate-slide-up stagger-2">
-              I specialize in building world-class mobile applications at scale, with deep expertise in Kotlin, Jetpack Compose, Clean Architecture, and TDD. 
-              Passionate about engineering velocity, mentoring teams, and delivering high-quality apps that serve millions of users.
+            <p class="text-[var(--text-secondary)] mb-4 opacity-0 animate-slide-up stagger-2">
+              I specialize in Android engineering, architecture, and engineering leadership. I build reliable Android products, lead engineering teams, and improve the systems and practices that help engineers ship better software.
+            </p>
+            <p class="text-[var(--text-muted)] opacity-0 animate-slide-up stagger-3">
+              Outside the day job I keep building: developer tooling, automation, MCP servers, and AI infrastructure — mostly in the open on GitHub.
             </p>
           </div>
         </div>
 
-        <div class="mb-12 opacity-0 animate-slide-up stagger-3">
-          <h2 class="text-2xl font-semibold mb-6">Skills & Technologies</h2>
-          <div class="space-y-4">
-            <div class="flex flex-wrap gap-2">
-              {skills.filter(s => s.category === 'languages').map((skill) => (
-                <span class="px-3 py-1.5 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-sm">{skill.name}</span>
-              ))}
-            </div>
-            <div class="flex flex-wrap gap-2">
-              {skills.filter(s => s.category === 'architecture').map((skill) => (
-                <span class="px-3 py-1.5 rounded-lg bg-[var(--accent)]/10 border border-[var(--accent)]/30 text-sm text-[var(--accent)]">{skill.name}</span>
-              ))}
-            </div>
-            <div class="flex flex-wrap gap-2">
-              {skills.filter(s => s.category === 'tools').map((skill) => (
-                <span class="px-3 py-1.5 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-sm">{skill.name}</span>
-              ))}
-            </div>
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6">How I Lead</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {howILead.map((l) => (
+              <div class="card">
+                <h3 class="text-lg font-semibold mb-2">{l.title}</h3>
+                <p class="text-[var(--text-secondary)] text-sm">{l.body}</p>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div class="mb-12 opacity-0 animate-slide-up stagger-4">
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6">Engineering Principles</h2>
+          <ul class="space-y-3">
+            {principles.map((p) => (
+              <li class="flex items-start gap-3 text-[var(--text-secondary)]">
+                <span class="text-[var(--accent)] mt-1">→</span>
+                {p}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="mb-12">
           <h2 class="text-2xl font-semibold mb-6">Work Experience</h2>
           <div class="space-y-6">
             {experience.map((job) => (
@@ -198,6 +220,7 @@ const openSource = [
                   </div>
                   <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">{job.period}</span>
                 </div>
+                <p class="text-[var(--text-secondary)] text-sm mb-4">{job.summary}</p>
                 <ul class="space-y-2 mb-4">
                   {job.highlights.map((h) => (
                     <li class="flex items-start gap-2 text-[var(--text-secondary)] text-sm">
@@ -216,11 +239,10 @@ const openSource = [
           </div>
         </div>
 
-        <div class="mb-12 opacity-0 animate-slide-up stagger-4">
-          <h2 class="text-2xl font-semibold mb-4">Skola — Internal AI Marketplace</h2>
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Engineering Productivity</h2>
           <p class="text-[var(--text-secondary)] mb-6">
-            Created <strong class="text-[var(--text)]">Skola</strong> (Indonesian for "school") — an internal marketplace for sharing reusable AI Skills and MCP servers at Good Doctor Technology. 
-            Makes AI agents smarter with company-specific knowledge and helps engineers ramp up faster on agentic AI.
+            Created <strong class="text-[var(--text)]">Skola</strong> (Indonesian for "school") — an internal marketplace for sharing reusable AI Skills and MCP servers at Good Doctor Technology. Makes AI agents more effective with company-specific knowledge and helps engineers ramp up faster on agentic AI.
           </p>
           <a href="https://good-doctor-technology.github.io/skola-marketplace/" target="_blank" rel="noopener" class="card flex items-center justify-between group">
             <div>
@@ -240,32 +262,30 @@ const openSource = [
           </a>
         </div>
 
-        <div class="mb-12 opacity-0 animate-slide-up stagger-4">
-          <h2 class="text-2xl font-semibold mb-6">Open Source</h2>
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Things I Build Outside the Day Job</h2>
           <p class="text-[var(--text-secondary)] mb-6">
-            MCP servers that bridge the gap between powerful AI models and actual developer workflows, making automation more natural, accessible, and powerful. All written in Python, support stdio and HTTP modes, and published on PyPI.
+            I build tools because I encounter engineering problems and want to solve them. Most of these MCP servers are written in Python, support stdio and HTTP modes, and are published on PyPI.
           </p>
           <div class="grid gap-4">
-            {openSource.map((project) => (
-              <a href={project.url} target="_blank" rel="noopener" class="card flex items-center justify-between group">
-                <div>
-                  <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">
-                    {project.name}
-                    <span class="ml-2 text-sm font-normal text-[var(--text-muted)]">{project.stars}</span>
-                  </h3>
-                  <p class="text-[var(--text-secondary)] text-sm">{project.description}</p>
+            {projects.map((project) => (
+              <a href={project.url} target="_blank" rel="noopener" class="card group">
+                <div class="flex items-center justify-between mb-1">
+                  <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">{project.name}</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--text-muted)] group-hover:text-[var(--accent)] group-hover:translate-x-1 transition-all">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--text-muted)] group-hover:text-[var(--accent)] group-hover:translate-x-1 transition-all">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
+                <p class="text-[var(--text-muted)] text-sm mb-1">{project.problem}</p>
+                <p class="text-[var(--text-secondary)] text-sm">{project.built}</p>
               </a>
             ))}
           </div>
         </div>
 
-        <div class="mb-12 opacity-0 animate-slide-up stagger-5">
+        <div class="mb-12">
           <h2 class="text-2xl font-semibold mb-6">Education</h2>
           <div class="space-y-4">
             {education.map((edu) => (
@@ -283,7 +303,19 @@ const openSource = [
           </div>
         </div>
 
-        <div class="opacity-0 animate-slide-up stagger-5">
+        <div class="mb-12">
+          <h2 class="text-2xl font-semibold mb-6">What I'm interested in</h2>
+          <p class="text-[var(--text-secondary)] mb-4">
+            Roles where I can stay close to technology while expanding impact through technical leadership and team leadership:
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {["Senior Android Engineer", "Lead Android Engineer", "Staff / Principal Android Engineer", "Mobile Engineering Manager"].map((r) => (
+              <span class="px-3 py-1.5 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-sm">{r}</span>
+            ))}
+          </div>
+        </div>
+
+        <div>
           <h2 class="text-2xl font-semibold mb-6">Get In Touch</h2>
           <div class="flex flex-wrap gap-4">
             <a href="mailto:agimaulana.dex@gmail.com" class="btn-primary">
@@ -293,18 +325,8 @@ const openSource = [
               </svg>
               Email
             </a>
-            <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              LinkedIn
-            </a>
-            <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .315.192.694.793.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              GitHub
-            </a>
+            <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
+            <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
           </div>
         </div>
       </div>
