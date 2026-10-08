@@ -5,10 +5,8 @@ interface Job {
   role: string;
   company: string;
   period: string;
-  location: string;
   summary: string;
   highlights: string[];
-  tech: string[];
 }
 
 const experience: Job[] = [
@@ -16,70 +14,60 @@ const experience: Job[] = [
     role: "Lead Mobile Engineer (Android + iOS)",
     company: "Good Doctor Technology",
     period: "April 2025 – Present",
-    location: "Jakarta, Indonesia",
-    summary: "Leading the mobile engineering organization — 5 engineers across Android and iOS — with full ownership of strategy, process, and delivery.",
+    summary: "Leading the mobile engineering organization: 5 engineers across Android and iOS, with full ownership of strategy, process, and delivery.",
     highlights: [
       "Drove end-to-end Huawei partnership integration enabling the Good Doctor app on AppGallery for 1.5M potential new users",
       "Reduced mobile CI/CD queue times 40–60% through trunk-based development and optimized build pipelines",
       "Established cross-platform engineering practices: shared retrospectives, Show & Tell sessions, and joint learning that eliminated platform silos",
-      "Created Skola — an internal marketplace for reusable AI Skills and MCP servers that helps engineers ramp up faster on agentic AI"
+      "Created Skola, an internal marketplace for reusable AI Skills and MCP servers that helps engineers ramp up faster on agentic AI"
     ],
-    tech: ["Kotlin", "Swift", "CI/CD", "Codemagic", "GitHub Actions", "HMS Push Kit", "AI Infrastructure"]
   },
   {
     role: "Senior Android Engineer → Android Lead",
     company: "Good Doctor Technology",
     period: "July 2023 – April 2025",
-    location: "Jakarta, Indonesia",
     summary: "Led the complete ground-up rewrite of the flagship health-tech Android app, then built the engineering organization around it.",
     highlights: [
       "Architected and delivered a 100% Kotlin + Jetpack Compose rewrite in 7 months, reaching 99.8% crash-free shortly after release",
       "Led a cross-functional team of 7 engineers (in-house + contractors + vendors) through modular Clean Architecture delivery",
-      "Established TDD culture: 100% unit test coverage, rigorous Compose UI testing, and release-train staging (10% → 100% with immediate halt on regressions)",
+      "Established TDD culture: full unit test coverage, rigorous Compose UI testing, and release-train staging (10% → 100% with immediate halt on regressions)",
       "Built the engineering system, not just the app: architecture conventions, technical-debt ownership, mentoring, and engineering rituals"
     ],
-    tech: ["Kotlin", "Jetpack Compose", "Clean Architecture", "Hilt", "TDD", "CI/CD"]
   },
   {
     role: "Android Engineer (Technical Expert)",
     company: "Vidio",
     period: "October 2022 – July 2023",
-    location: "Jakarta, Indonesia",
     summary: "Owned core components of Indonesia's #1 OTT streaming app at tens of millions of monthly active users.",
     highlights: [
       "Designed and developed a shared ExoPlayer-based core player library powering both mobile and Android TV applications",
       "Refactored and stabilized large sections of the Android TV app using the Leanback UI framework",
       "Practiced daily TDD, pair programming, and extreme programming"
     ],
-    tech: ["Kotlin", "ExoPlayer", "Android TV", "Leanback", "TDD"]
   },
   {
     role: "Software Engineer & Android Chapter Lead",
     company: "Justika",
     period: "July 2021 – October 2022",
-    location: "Jakarta, Indonesia",
-    summary: "Founded and led the Android Chapter — from hiring to architecture to cross-platform delivery.",
+    summary: "Founded and led the Android Chapter: from hiring to architecture to cross-platform delivery.",
     highlights: [
       "Built the Android team from the ground up and owned the complete hiring cycle",
       "Led greenfield development of Client Connect in Kotlin from inception to launch",
       "Directed the rewrite of the flagship Lawyer Connect app to Flutter + Riverpod",
       "Established the code review process and engineering best practices across the mobile organization"
     ],
-    tech: ["Kotlin", "Flutter", "Riverpod", "TDD", "Mockk", "Espresso"]
   },
   {
     role: "Junior Software Engineer",
     company: "Justika",
     period: "August 2019 – July 2021",
-    location: "Jakarta, Indonesia",
-    summary: "Took full ownership of Lawyer Connect within months of joining — product, APIs, and architecture migration.",
+    summary: "Took full ownership of Lawyer Connect within months of joining: product, APIs, and architecture migration.",
     highlights: [
       "Led the migration from legacy Java to Kotlin + MVVM + RxJava",
-      "Delivered production REST APIs (DRF) with full automated test coverage",
+      "Delivered production REST APIs (Django Rest Framework) with full automated test coverage",
       "Shipped VoIP calling (Twilio) and in-app chat (SendBird)",
       "Introduced monitoring (Sentry/Mixpanel) and feature flags for safe large-scale refactors"
     ],
-    tech: ["Kotlin", "Python", "Django Rest Framework", "RxJava", "MVVM"]
   }
 ];
 
@@ -102,7 +90,7 @@ const howILead = [
   },
   {
     title: "Make quality part of the system",
-    body: "TDD, Compose UI testing, architecture conventions, CI/CD, technical-debt ownership, release processes — so quality doesn't depend on heroics."
+    body: "TDD, Compose UI testing, architecture conventions, CI/CD, technical-debt ownership, release processes, so quality doesn't depend on heroics."
   },
   {
     title: "Build culture deliberately",
@@ -114,32 +102,27 @@ const projects = [
   {
     name: "GooglePlayConsoleMcp",
     url: "https://github.com/AgiMaulana/GooglePlayConsoleMcp",
-    problem: "Google Play publishing is slow, click-heavy, and error-prone.",
-    built: "MCP server covering publishing workflows: artifacts, release tracks, staged rollouts, testing, and Play Console operations."
+    built: "MCP server covering Google Play publishing workflows: artifacts, release tracks, staged rollouts, testing, and Play Console operations."
   },
   {
     name: "HuaweiAppGalleryMcp",
     url: "https://github.com/AgiMaulana/HuaweiAppGalleryMcp",
-    problem: "AppGallery distribution has no automation story.",
-    built: "MCP server for app metadata, AAB uploads, phased and scheduled releases, testing, and reporting."
+    built: "MCP server for AppGallery app metadata, AAB uploads, phased and scheduled releases, testing, and reporting."
   },
   {
     name: "CodemagicMcp",
     url: "https://github.com/agimaulana/codemagicmcp",
-    problem: "CI/CD state lives in a dashboard engineers keep refreshing.",
-    built: "MCP server exposing builds, apps, artifacts, logs, environment variables, and caches to AI agents."
+    built: "MCP server exposing Codemagic builds, apps, artifacts, logs, environment variables, and caches to AI agents."
   },
   {
     name: "SentryCompanionMcp",
     url: "https://github.com/AgiMaulana/SentryCompanionMcp",
-    problem: "The official Sentry MCP doesn't cover everything needed in triage.",
-    built: "Companion MCP server adding tooling beyond the official integration."
+    built: "Companion MCP server adding Sentry tooling beyond the official integration, for triage workflows."
   },
   {
     name: "SlackBotMcp",
     url: "https://github.com/AgiMaulana/SlackBotMcp",
-    problem: "AI agents can't act where teams actually communicate.",
-    built: "MCP server that sends bot messages, reads channels and threads inside AI workflows."
+    built: "MCP server that sends bot messages and reads channels and threads inside AI workflows."
   }
 ];
 
@@ -148,187 +131,144 @@ const education = [
     school: "Telkom University",
     degree: "Bachelor of Informatics Engineering",
     period: "2017 – 2019",
-    note: "Published: 'Sentiment Classification of Indonesian Restaurant Reviews Using Lexicon-Enhanced Improved Naive Bayes' – Indo-JC Journal (80% precision / 76% F1)"
+    note: "Published: 'Sentiment Classification of Indonesian Restaurant Reviews Using Lexicon-Enhanced Improved Naive Bayes', Indo-JC Journal (80% precision / 76% F1)"
   },
   {
     school: "Telkom University",
     degree: "Diploma-3 (D3) in Informatics Engineering",
     period: "2014 – 2017",
-    note: "Organizing Committee: Hackathon Merdeka 2.0 | Capstone: Real-time parking availability system using CCTV + OpenCV"
+    note: "Organizing Committee: Hackathon Merdeka 2.0 · Capstone: real-time parking availability system using CCTV + OpenCV"
   }
 ];
 ---
 
-<BaseLayout title="About - Agi Maulana" description="Agi Maulana — Senior Android Engineer & Mobile Engineering Leader. Android at production scale, architecture, and the systems that help engineering teams ship faster.">
-  <section class="pt-24 pb-16">
-    <div class="container-custom">
-      <div class="max-w-3xl mx-auto">
-        <h1 class="text-4xl font-bold mb-8 opacity-0 animate-fade-in">About</h1>
+<BaseLayout title="About - Agi Maulana" description="Agi Maulana: Senior Android Engineer & Mobile Engineering Leader. Android at production scale, architecture, and the systems that help engineering teams ship faster.">
+  <section class="pt-24 pb-24">
+    <div class="container-prose">
+      <h1 class="text-4xl font-bold tracking-tight mb-10">About</h1>
 
-        <div class="flex flex-col md:flex-row gap-8 mb-12">
-          <div class="flex-shrink-0">
-            <div class="w-32 h-32 rounded-2xl overflow-hidden border border-[var(--border)]">
-              <img src="/profile.png" alt="Agi Maulana" class="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div>
-            <p class="text-lg text-[var(--text-secondary)] mb-6 opacity-0 animate-slide-up stagger-1">
-              I'm <strong class="text-[var(--text)]">Agi Maulana</strong>, a Senior Android Engineer &amp; Mobile Engineering Leader based in Jakarta, Indonesia. Currently leading mobile engineering at Good Doctor Technology.
-            </p>
-            <p class="text-[var(--text-secondary)] mb-4 opacity-0 animate-slide-up stagger-2">
-              I specialize in Android engineering, architecture, and engineering leadership. I build reliable Android products, lead engineering teams, and improve the systems and practices that help engineers ship better software.
-            </p>
-            <p class="text-[var(--text-muted)] opacity-0 animate-slide-up stagger-3">
-              Outside the day job I keep building: developer tooling, automation, MCP servers, and AI infrastructure — mostly in the open on GitHub.
-            </p>
-          </div>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6">How I Lead</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {howILead.map((l) => (
-              <div class="card">
-                <h3 class="text-lg font-semibold mb-2">{l.title}</h3>
-                <p class="text-[var(--text-secondary)] text-sm">{l.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6">Engineering Principles</h2>
-          <ul class="space-y-3">
-            {principles.map((p) => (
-              <li class="flex items-start gap-3 text-[var(--text-secondary)]">
-                <span class="text-[var(--accent)] mt-1">→</span>
-                {p}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6">Work Experience</h2>
-          <div class="space-y-6">
-            {experience.map((job) => (
-              <div class="card">
-                <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-4">
-                  <div>
-                    <h3 class="text-lg font-semibold">{job.role}</h3>
-                    <p class="text-[var(--text-secondary)]">{job.company} · {job.location}</p>
-                  </div>
-                  <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">{job.period}</span>
-                </div>
-                <p class="text-[var(--text-secondary)] text-sm mb-4">{job.summary}</p>
-                <ul class="space-y-2 mb-4">
-                  {job.highlights.map((h) => (
-                    <li class="flex items-start gap-2 text-[var(--text-secondary)] text-sm">
-                      <span class="text-[var(--accent)] mt-1">•</span>
-                      {h}
-                    </li>
-                  ))}
-                </ul>
-                <div class="flex flex-wrap gap-2">
-                  {job.tech.map((t) => (
-                    <span class="px-2 py-1 rounded bg-[var(--bg-tertiary)] text-xs">{t}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-4">Engineering Productivity</h2>
-          <p class="text-[var(--text-secondary)] mb-6">
-            Created <strong class="text-[var(--text)]">Skola</strong> (Indonesian for "school") — an internal marketplace for sharing reusable AI Skills and MCP servers at Good Doctor Technology. Makes AI agents more effective with company-specific knowledge and helps engineers ramp up faster on agentic AI.
-          </p>
-          <a href="https://good-doctor-technology.github.io/skola-marketplace/" target="_blank" rel="noopener" class="card flex items-center justify-between group">
-            <div>
-              <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">
-                Skola Marketplace
-                <span class="ml-2 px-2 py-0.5 rounded bg-[var(--accent)]/10 text-xs text-[var(--accent)]">Internal</span>
-              </h3>
-              <p class="text-[var(--text-secondary)] text-sm">
-                11 Skills · 5 MCPs · Learn section with fundamentals and lessons
-              </p>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--text-muted)] group-hover:text-[var(--accent)] group-hover:translate-x-1 transition-all">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-          </a>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-4">Things I Build Outside the Day Job</h2>
-          <p class="text-[var(--text-secondary)] mb-6">
-            I build tools because I encounter engineering problems and want to solve them. Most of these MCP servers are written in Python, support stdio and HTTP modes, and are published on PyPI.
-          </p>
-          <div class="grid gap-4">
-            {projects.map((project) => (
-              <a href={project.url} target="_blank" rel="noopener" class="card group">
-                <div class="flex items-center justify-between mb-1">
-                  <h3 class="font-semibold group-hover:text-[var(--accent)] transition-colors">{project.name}</h3>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--text-muted)] group-hover:text-[var(--accent)] group-hover:translate-x-1 transition-all">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </div>
-                <p class="text-[var(--text-muted)] text-sm mb-1">{project.problem}</p>
-                <p class="text-[var(--text-secondary)] text-sm">{project.built}</p>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6">Education</h2>
-          <div class="space-y-4">
-            {education.map((edu) => (
-              <div class="card">
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                  <div>
-                    <h3 class="text-lg font-medium">{edu.school}</h3>
-                    <p class="text-[var(--text-secondary)]">{edu.degree}</p>
-                    <p class="text-[var(--text-muted)] text-sm mt-1">{edu.note}</p>
-                  </div>
-                  <span class="text-sm text-[var(--text-muted)]">{edu.period}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div class="mb-12">
-          <h2 class="text-2xl font-semibold mb-6">What I'm interested in</h2>
-          <p class="text-[var(--text-secondary)] mb-4">
-            Roles where I can stay close to technology while expanding impact through technical leadership and team leadership:
-          </p>
-          <div class="flex flex-wrap gap-2">
-            {["Senior Android Engineer", "Lead Android Engineer", "Staff / Principal Android Engineer", "Mobile Engineering Manager"].map((r) => (
-              <span class="px-3 py-1.5 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-sm">{r}</span>
-            ))}
-          </div>
-        </div>
-
+      <div class="flex flex-col sm:flex-row gap-8 mb-14">
+        <img src="/profile.png" alt="Agi Maulana" class="w-24 h-24 rounded-lg object-cover flex-shrink-0" />
         <div>
-          <h2 class="text-2xl font-semibold mb-6">Get In Touch</h2>
-          <div class="flex flex-wrap gap-4">
-            <a href="mailto:agimaulana.dex@gmail.com" class="btn-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              Email
-            </a>
-            <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
-            <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
-          </div>
+          <p class="text-[var(--text-secondary)] mb-4">
+            I'm Agi Maulana, a Senior Android Engineer &amp; Mobile Engineering Leader based in Jakarta, Indonesia. Currently leading mobile engineering at Good Doctor Technology.
+          </p>
+          <p class="text-[var(--text-secondary)] mb-4">
+            I specialize in Android engineering, architecture, and engineering leadership. I build reliable Android products, lead engineering teams, and improve the systems and practices that help engineers ship better software.
+          </p>
+          <p class="text-[var(--text-secondary)]">
+            Outside the day job I keep building: developer tooling, automation, MCP servers, and AI infrastructure, mostly in the open on GitHub.
+          </p>
         </div>
+      </div>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">How I lead</h2>
+      <div class="divide-y divide-[var(--border)] mb-14">
+        {howILead.map((l) => (
+          <div class="entry">
+            <h3 class="font-semibold mb-1">{l.title}</h3>
+            <p class="text-[var(--text-secondary)] text-sm">{l.body}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">Engineering principles</h2>
+      <ul class="space-y-3 text-[var(--text-secondary)] mb-14">
+        {principles.map((p) => (
+          <li>{p}</li>
+        ))}
+      </ul>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">Work experience</h2>
+      <div class="divide-y divide-[var(--border)] mb-14">
+        {experience.map((job) => (
+          <div class="entry">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+              <h3 class="font-semibold">{job.role} · {job.company}</h3>
+              <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">{job.period}</span>
+            </div>
+            <p class="text-[var(--text-secondary)] text-sm mb-3">{job.summary}</p>
+            <ul class="space-y-1.5">
+              {job.highlights.map((h) => (
+                <li class="text-[var(--text-secondary)] text-sm">{h}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-4">Engineering productivity</h2>
+      <p class="text-[var(--text-secondary)] mb-4">
+        Created Skola (Indonesian for "school"), an internal marketplace for sharing reusable AI Skills and MCP servers at Good Doctor Technology. It makes AI agents more effective with company-specific knowledge and helps engineers ramp up faster on agentic AI.
+      </p>
+      <p class="mb-14">
+        <a href="https://good-doctor-technology.github.io/skola-marketplace/" target="_blank" rel="noopener" class="hover-link text-sm">
+          Skola Marketplace · 11 Skills · 5 MCPs · Learn section
+        </a>
+      </p>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-4">Things I build outside the day job</h2>
+      <p class="text-[var(--text-secondary)] mb-6">
+        I build tools because I encounter engineering problems and want to solve them. Most of these MCP servers are written in Python, support stdio and HTTP modes, and are published on PyPI.
+      </p>
+      <div class="divide-y divide-[var(--border)] mb-14">
+        {projects.map((p) => (
+          <div class="entry">
+            <div class="grid grid-cols-1 sm:grid-cols-[220px_1fr] gap-x-8 gap-y-1">
+              <a href={p.url} target="_blank" rel="noopener" class="hover-link font-mono text-sm font-medium">
+                {p.name}
+              </a>
+              <p class="text-[var(--text-secondary)] text-sm">{p.built}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">Education</h2>
+      <div class="divide-y divide-[var(--border)] mb-14">
+        {education.map((edu) => (
+          <div class="entry">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-1">
+              <h3 class="font-semibold">{edu.school} · {edu.degree}</h3>
+              <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">{edu.period}</span>
+            </div>
+            <p class="text-[var(--text-secondary)] text-sm">{edu.note}</p>
+          </div>
+        ))}
+      </div>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">What I'm interested in</h2>
+      <p class="text-[var(--text-secondary)] mb-4">
+        Roles where I can stay close to technology while expanding impact through technical leadership and team leadership:
+      </p>
+      <ul class="list-disc list-inside text-[var(--text-secondary)] space-y-1 mb-14">
+        <li>Senior Android Engineer</li>
+        <li>Lead Android Engineer</li>
+        <li>Staff / Principal Android Engineer</li>
+        <li>Mobile Engineering Manager</li>
+      </ul>
+
+      <hr class="rule mb-10" />
+
+      <h2 class="text-2xl font-semibold mb-6">Get in touch</h2>
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:agimaulana.dex@gmail.com" class="btn-primary">Email me</a>
+        <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
+        <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
       </div>
     </div>
   </section>

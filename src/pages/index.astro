@@ -2,10 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const impactMetrics = [
-  { value: "99.8%", label: "Crash-free after Android rewrite" },
-  { value: "40–60%", label: "Faster release cycles via CI/CD & trunk-based development" },
-  { value: "5 engineers", label: "Mobile engineering organization led (Android + iOS)" },
-  { value: "7 months", label: "Full ground-up Android rewrite" },
+  { value: "99.8%", label: "Crash-free shortly after the Android rewrite shipped" },
+  { value: "40–60%", label: "Faster release cycles via CI/CD and trunk-based development" },
+  { value: "5 engineers", label: "Mobile engineering organization led, Android and iOS" },
+  { value: "7 months", label: "From rewrite kickoff to full production cutover" },
 ];
 
 const capabilities = [
@@ -30,11 +30,11 @@ const capabilities = [
 const howILead = [
   {
     title: "Lead through systems, not micromanagement",
-    body: "I create processes, visibility, expectations, and feedback loops so engineers can operate independently. Lightweight rituals — like Show & Tell — create awareness without turning leadership into status-checking.",
+    body: "I create processes, visibility, expectations, and feedback loops so engineers can operate independently. Show & Tell is the example: a lightweight ritual that creates real awareness without turning leadership into status-checking.",
   },
   {
     title: "Give engineers ownership",
-    body: "Technical ownership is delegated deliberately. Engineers propose solutions before receiving guidance, so decisions are built inside the team, not handed down.",
+    body: "Engineers propose solutions before they receive guidance. Delegating technical ownership builds decisions inside the team instead of handing them down.",
   },
   {
     title: "Make quality part of the system",
@@ -49,11 +49,11 @@ const howILead = [
 const progression = [
   {
     stage: "Android Engineer",
-    body: "Built products end to end and developed deep Android expertise — from health-tech apps to streaming platforms at millions-user scale.",
+    body: "Built products end to end and developed deep Android expertise, from health-tech apps to streaming platforms at large scale.",
   },
   {
     stage: "Senior Android Engineer",
-    body: "Owned architecture, complex features, quality, and technical direction — leading a 100% Kotlin + Compose greenfield rewrite.",
+    body: "Owned architecture, complex features, quality, and technical direction, leading a 100% Kotlin + Compose greenfield rewrite.",
   },
   {
     stage: "Android Lead",
@@ -61,77 +61,70 @@ const progression = [
   },
   {
     stage: "Mobile Engineering Leader",
-    body: "Expanded scope across Android + iOS: people leadership, delivery, engineering culture, and organizational systems.",
+    body: "Expanded scope across Android and iOS: people leadership, delivery, engineering culture, and organizational systems.",
   },
 ];
 
 const projects = [
   {
     name: "GooglePlayConsoleMcp",
+    url: "https://github.com/AgiMaulana/GooglePlayConsoleMcp",
     problem: "Publishing to Google Play is slow, click-heavy, and easy to get wrong.",
     built: "MCP server covering the publishing workflow: artifacts, release tracks, staged rollouts, testing, and Play Console operations.",
-    url: "https://github.com/AgiMaulana/GooglePlayConsoleMcp",
   },
   {
     name: "HuaweiAppGalleryMcp",
+    url: "https://github.com/AgiMaulana/HuaweiAppGalleryMcp",
     problem: "AppGallery operations have no good automation story.",
     built: "MCP server for app metadata, AAB uploads, phased and scheduled releases, testing, and reporting.",
-    url: "https://github.com/AgiMaulana/HuaweiAppGalleryMcp",
   },
   {
     name: "CodemagicMcp",
+    url: "https://github.com/agimaulana/codemagicmcp",
     problem: "CI/CD state lives in a dashboard engineers have to keep checking.",
     built: "MCP server exposing Codemagic builds, artifacts, logs, environment variables, and caches to AI agents.",
-    url: "https://github.com/agimaulana/codemagicmcp",
   },
   {
     name: "SentryCompanionMcp",
+    url: "https://github.com/AgiMaulana/SentryCompanionMcp",
     problem: "The official Sentry MCP doesn't cover everything engineers need.",
     built: "Companion MCP server with extra Sentry tooling for triage workflows.",
-    url: "https://github.com/AgiMaulana/SentryCompanionMcp",
   },
   {
     name: "SlackBotMcp",
+    url: "https://github.com/AgiMaulana/SlackBotMcp",
     problem: "AI agents can't naturally act where teams actually communicate.",
     built: "MCP server that reads channels and threads and sends bot messages inside AI workflows.",
-    url: "https://github.com/AgiMaulana/SlackBotMcp",
   },
-];
-
-const roles = [
-  "Senior Android Engineer",
-  "Lead Android Engineer",
-  "Staff / Principal Android Engineer",
-  "Mobile Engineering Manager",
 ];
 ---
 
 <BaseLayout title="Agi Maulana - Senior Android Engineer & Mobile Engineering Leader">
   <!-- Hero -->
-  <section class="pt-32 pb-16">
-    <div class="container-custom max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--bg-secondary)] border border-[var(--border)] text-sm text-[var(--text-secondary)] mb-6 opacity-0 animate-fade-in">
-        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-        <span>Open to Senior Android / Lead Android / Mobile Engineering Leadership opportunities</span>
-      </div>
+  <section class="pt-24 pb-14">
+    <div class="container-prose">
+      <p class="flex items-center gap-2 text-sm text-[var(--text-muted)] mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-[var(--accent)]" aria-hidden="true"></span>
+        Open to Senior Android / Lead Android / Mobile Engineering Leadership opportunities
+      </p>
 
-      <h1 class="text-4xl md:text-6xl font-bold mb-4 opacity-0 animate-slide-up stagger-1">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-3">
         Agi Maulana
       </h1>
 
-      <p class="text-xl md:text-2xl font-semibold text-[var(--accent)] mb-4 opacity-0 animate-slide-up stagger-2">
+      <p class="text-lg md:text-xl text-[var(--text-secondary)] mb-4">
         Senior Android Engineer &amp; Mobile Engineering Leader
       </p>
 
-      <p class="text-lg text-[var(--text-secondary)] mb-6 opacity-0 animate-slide-up stagger-3">
+      <p class="text-base text-[var(--text-secondary)] max-w-2xl mb-3">
         I build reliable Android products, lead engineering teams, and improve the systems and practices that help engineers ship better software.
       </p>
 
-      <p class="text-base text-[var(--text-muted)] mb-8 opacity-0 animate-slide-up stagger-3">
-        Android &nbsp;·&nbsp; Kotlin &nbsp;·&nbsp; Jetpack Compose &nbsp;·&nbsp; Architecture &nbsp;·&nbsp; Technical Leadership &nbsp;·&nbsp; Engineering Productivity
+      <p class="text-sm text-[var(--text-muted)] mb-8">
+        Android · Kotlin · Jetpack Compose · Architecture · Technical Leadership · Engineering Productivity
       </p>
 
-      <div class="flex flex-wrap gap-4 mb-8 opacity-0 animate-slide-up stagger-4">
+      <div class="flex flex-wrap gap-3">
         <a href="#impact" class="btn-primary">View my work</a>
         <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
         <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
@@ -140,47 +133,50 @@ const roles = [
   </section>
 
   <!-- Impact -->
-  <section id="impact" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up stagger-1">Impact</h2>
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 opacity-0 animate-slide-up stagger-2">
+  <section id="impact" class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">Impact</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8">
         {impactMetrics.map((m) => (
           <div>
-            <p class="text-3xl md:text-4xl font-bold text-[var(--accent)] mb-1">{m.value}</p>
-            <p class="text-sm text-[var(--text-muted)]">{m.label}</p>
+            <p class="metric text-[var(--text)]">{m.value}</p>
+            <p class="text-sm text-[var(--text-muted)] mt-1">{m.label}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- About / story -->
-  <section id="about" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-3xl">
-      <h2 class="text-3xl font-bold mb-6 opacity-0 animate-slide-up">About</h2>
-      <p class="text-lg text-[var(--text-secondary)] mb-4 opacity-0 animate-slide-up stagger-1">
-        I'm an Android engineer who grew into mobile engineering leadership — without leaving the technical roots behind.
+  <!-- About -->
+  <section id="about" class="pb-16">
+    <div class="container-prose">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-6">About</h2>
+      <p class="text-[var(--text-secondary)] mb-4">
+        I'm an Android engineer who grew into mobile engineering leadership, without leaving the technical roots behind.
       </p>
-      <p class="text-[var(--text-secondary)] mb-4 opacity-0 animate-slide-up stagger-2">
+      <p class="text-[var(--text-secondary)] mb-4">
         I started with products: owning an Android app end to end, modernizing legacy Java, shipping features used at large scale. Good architecture and testing became the lens through which I judged everything I built.
       </p>
-      <p class="text-[var(--text-secondary)] mb-4 opacity-0 animate-slide-up stagger-3">
-        At Good Doctor Technology I led the ground-up rewrite of a flagship health-tech Android app — Kotlin, Jetpack Compose, modular Clean Architecture, Hilt — in 7 months, reaching 99.8% crash-free shortly after release. Then I built the organization around it: an Android team turned into a mobile engineering organization spanning Android and iOS, with shared practices, release processes, and AI-driven internal tooling.
+      <p class="text-[var(--text-secondary)] mb-4">
+        At Good Doctor Technology I led the ground-up rewrite of a flagship health-tech Android app, in Kotlin, Jetpack Compose, modular Clean Architecture, and Hilt. It shipped in 7 months and reached 99.8% crash-free shortly after release. Then I built the organization around it: an Android team turned into a mobile engineering organization spanning Android and iOS, with shared practices, release processes, and AI-driven internal tooling.
       </p>
-      <p class="text-[var(--text-secondary)] opacity-0 animate-slide-up stagger-4">
-        Today my focus is engineering systems: architecture conventions, CI/CD, developer productivity, and AI infrastructure — the things that let teams move fast without sacrificing quality.
+      <p class="text-[var(--text-secondary)]">
+        Today my focus is engineering systems: architecture conventions, CI/CD, developer productivity, and AI infrastructure. The things that let teams move fast without sacrificing quality.
       </p>
     </div>
   </section>
 
   <!-- What I do -->
-  <section id="engineering" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">What I do</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-0 animate-slide-up stagger-1">
+  <section id="engineering" class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">What I do</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
         {capabilities.map((c) => (
-          <div class="card">
-            <h3 class="text-lg font-semibold mb-2">{c.title}</h3>
+          <div>
+            <h3 class="font-semibold mb-1">{c.title}</h3>
             <p class="text-[var(--text-secondary)] text-sm">{c.description}</p>
           </div>
         ))}
@@ -189,13 +185,14 @@ const roles = [
   </section>
 
   <!-- How I Lead -->
-  <section id="leadership" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">How I Lead</h2>
-      <div class="space-y-6 opacity-0 animate-slide-up stagger-1">
+  <section id="leadership" class="pb-16">
+    <div class="container-prose">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">How I lead</h2>
+      <div class="divide-y divide-[var(--border)]">
         {howILead.map((l) => (
-          <div class="card">
-            <h3 class="text-lg font-semibold mb-2">{l.title}</h3>
+          <div class="entry">
+            <h3 class="font-semibold mb-1">{l.title}</h3>
             <p class="text-[var(--text-secondary)] text-sm">{l.body}</p>
           </div>
         ))}
@@ -204,13 +201,14 @@ const roles = [
   </section>
 
   <!-- Progression -->
-  <section id="progression" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">Engineer → Senior → Lead → Mobile Leader</h2>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 opacity-0 animate-slide-up stagger-1">
+  <section id="progression" class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">Engineer, then senior, then lead, then mobile leader</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-8">
         {progression.map((p) => (
-          <div class="card">
-            <p class="text-sm font-medium text-[var(--accent)] mb-2 font-mono">{p.stage}</p>
+          <div>
+            <p class="text-sm font-semibold text-[var(--accent)] mb-1">{p.stage}</p>
             <p class="text-sm text-[var(--text-secondary)]">{p.body}</p>
           </div>
         ))}
@@ -218,159 +216,169 @@ const roles = [
     </div>
   </section>
 
-  <!-- Selected Experience: Good Doctor -->
-  <section id="experience" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">Selected Experience</h2>
+  <!-- Good Doctor case study -->
+  <section id="experience" class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">Good Doctor Technology</h2>
+      <p class="text-[var(--text-muted)] text-sm mb-8">Senior Android Engineer → Android Lead → Lead Mobile Engineer · July 2023 – Present · Jakarta</p>
 
-      <div class="card mb-8 opacity-0 animate-slide-up stagger-1">
-        <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-6">
-          <div>
-            <h3 class="text-xl font-semibold">Good Doctor Technology</h3>
-            <p class="text-[var(--text-secondary)]">Senior Android Engineer → Android Lead → Lead Mobile Engineer</p>
+      <div class="space-y-10">
+        <div>
+          <h3 class="font-semibold mb-2">The rewrite</h3>
+          <p class="text-[var(--text-secondary)] text-base max-w-3xl">
+            I joined when the Android product depended heavily on an external development vendor. I led the complete ground-up rewrite in Kotlin and Jetpack Compose: modular Clean Architecture, MVVM, Hilt, TDD, full unit test coverage, with a cross-functional team of 7 engineers across in-house, contractors, and vendors.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-5">
+            <div>
+              <p class="metric text-base">7 months</p>
+              <p class="text-xs text-[var(--text-muted)]">rewrite kickoff to cutover</p>
+            </div>
+            <div>
+              <p class="metric text-base">99.8%</p>
+              <p class="text-xs text-[var(--text-muted)]">crash-free after release</p>
+            </div>
+            <div>
+              <p class="metric text-base">100%</p>
+              <p class="text-xs text-[var(--text-muted)]">unit test coverage at delivery</p>
+            </div>
           </div>
-          <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">July 2023 – Present · Jakarta</span>
         </div>
 
-        <h4 class="font-semibold mb-2">The rewrite</h4>
-        <p class="text-[var(--text-secondary)] mb-6 text-sm">
-          I joined when the Android product depended heavily on an external development vendor. I led the complete ground-up rewrite in Kotlin and Jetpack Compose — modular Clean Architecture, MVVM, Hilt, TDD, 100% unit test coverage — with a cross-functional team of 7 engineers across in-house, contractors, and vendors. The rewrite went live in 7 months, reached a 99.8% crash-free rate shortly after release, and let the company sunset expensive legacy contracts.
-        </p>
-
-        <h4 class="font-semibold mb-2">The system around it</h4>
-        <p class="text-[var(--text-secondary)] mb-4 text-sm">
-          Then I built the engineering system around the product — not just the application. Architecture conventions, testing practices, release-train process with staged rollouts (10% → 100%, immediate halt on regressions), technical-debt ownership, engineering rituals, mentoring, and collaboration across the mobile organization. Mobile CI/CD queue times dropped 40–60% through trunk-based development and build pipeline optimization.
-        </p>
-        <h4 class="font-semibold mb-2">The organization</h4>
-        <p class="text-[var(--text-secondary)] mb-4 text-sm">
-          Beyond the Android app, I led the mobile organization — 5 engineers across Android and iOS. Established shared retrospectives, Show &amp; Tell, and joint learning across platforms. On the product owned side, I drove the Huawei AppGallery integration (HMS Push Kit) bringing the app to 1.5M potential new users. I also created Skola, an internal marketplace for reusable AI Skills and MCP servers — see it at <a href="https://good-doctor-technology.github.io/skola-marketplace/" target="_blank" rel="noopener" class="text-[var(--accent)] hover:underline">good-doctor-technology.github.io/skola-marketplace</a>.
-        </p>
-
-        <div class="flex flex-wrap gap-2 mt-4">
-          {["Kotlin", "Jetpack Compose", "Clean Architecture", "Hilt", "TDD", "CI/CD", "Codemagic", "GitHub Actions", "Swift", "HMS Push Kit"].map((t) => (
-            <span class="px-2 py-1 rounded bg-[var(--bg-tertiary)] text-xs">{t}</span>
-          ))}
-        </div>
-      </div>
-
-      <div class="opacity-0 animate-slide-up stagger-2">
-        <h3 class="text-xl font-semibold mb-6 mt-12">Earlier</h3>
-        <div class="space-y-6">
-          <div class="card">
-            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-2">
-              <div>
-                <h4 class="text-lg font-semibold">Vidio</h4>
-                <p class="text-[var(--text-secondary)]">Android Engineer (Technical Expert)</p>
-              </div>
-              <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">Oct 2022 – Jul 2023</span>
+        <div>
+          <h3 class="font-semibold mb-2">The system around it</h3>
+          <p class="text-[var(--text-secondary)] text-base max-w-3xl">
+            Then I built the engineering system around the product, not just the application: architecture conventions, testing practices, a release-train process with staged rollouts (10% → 100%, immediate halt on regressions), technical-debt ownership, engineering rituals, mentoring, and collaboration across the mobile organization.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-5">
+            <div>
+              <p class="metric text-base">40–60%</p>
+              <p class="text-xs text-[var(--text-muted)]">reduction in CI/CD queue times</p>
             </div>
-            <p class="text-[var(--text-secondary)] text-sm">Owned core components of Indonesia's #1 OTT streaming Android app at tens of millions of monthly active users. Designed and built a shared ExoPlayer-based core player library used by both mobile and Android TV apps. Stabilized and refactored the Android TV app using the Leanback UI toolkit. Daily TDD, pair programming, and extreme programming practices.</p>
+            <div>
+              <p class="metric text-base">10% → 100%</p>
+              <p class="text-xs text-[var(--text-muted)]">staged rollout with halt-on-regression</p>
+            </div>
           </div>
+        </div>
 
-          <div class="card">
-            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-2">
-              <div>
-                <h4 class="text-lg font-semibold">Justika</h4>
-                <p class="text-[var(--text-secondary)]">Junior Software Engineer → Android Chapter Lead</p>
-              </div>
-              <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">Aug 2019 – Oct 2022</span>
+        <div>
+          <h3 class="font-semibold mb-2">The organization</h3>
+          <p class="text-[var(--text-secondary)] text-base max-w-3xl">
+            Beyond the Android app, I led the mobile organization: 5 engineers across Android and iOS. Shared retrospectives, Show &amp; Tell, and joint learning across platforms. I drove the Huawei AppGallery integration, bringing the app to 1.5M potential new users, and created Skola, an internal marketplace for reusable AI Skills and MCP servers.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-5">
+            <div>
+              <p class="metric text-base">5 engineers</p>
+              <p class="text-xs text-[var(--text-muted)]">mobile organization, Android + iOS</p>
             </div>
-            <p class="text-[var(--text-secondary)] text-sm">Took full ownership of the Lawyer Connect Android app within months of joining. Migrated legacy Java to Kotlin + MVVM + RxJava. Shipped VoIP calling (Twilio) and in-app chat (SendBird). Later founded and led the Android Chapter — hired and onboarded engineers, led greenfield development of Client Connect, and rewrote the flagship app with Flutter + Riverpod. Built the mobile code review process and best-practices that the mobile org still uses today.</p>
+            <div>
+              <p class="metric text-base">1.5M users</p>
+              <p class="text-xs text-[var(--text-muted)]">reach via AppGallery integration</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Open Source & Experiments -->
-  <section id="projects" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-4xl">
-      <h2 class="text-3xl font-bold mb-4 opacity-0 animate-slide-up">Things I Build Outside the Day Job</h2>
-      <p class="text-lg text-[var(--text-secondary)] mb-10 opacity-0 animate-slide-up stagger-1">
-        I build tools because I encounter engineering problems and want to solve them — not because a job description says so.
+  <!-- Earlier experience -->
+  <section class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-6">Earlier</h2>
+      <div class="divide-y divide-[var(--border)]">
+        <div class="entry">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="font-semibold">Vidio · Android Engineer (Technical Expert)</h3>
+            <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">Oct 2022 – Jul 2023</span>
+          </div>
+          <p class="text-[var(--text-secondary)] text-sm max-w-3xl">Owned core components of Indonesia's #1 OTT streaming Android app at tens of millions of monthly active users. Designed and built a shared ExoPlayer-based core player library used by both mobile and Android TV apps. Stabilized and refactored the Android TV app using the Leanback UI toolkit. Daily TDD, pair programming, and extreme programming practices.</p>
+        </div>
+
+        <div class="entry">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">
+            <h3 class="font-semibold">Justika · Junior Software Engineer → Android Chapter Lead</h3>
+            <span class="text-sm text-[var(--text-muted)] whitespace-nowrap">Aug 2019 – Oct 2022</span>
+          </div>
+          <p class="text-[var(--text-secondary)] text-sm max-w-3xl">Took full ownership of the Lawyer Connect Android app within months of joining. Migrated legacy Java to Kotlin + MVVM + RxJava. Shipped VoIP calling (Twilio) and in-app chat (SendBird). Later founded and led the Android Chapter: hired and onboarded engineers, led greenfield development of Client Connect, and rewrote the flagship app with Flutter + Riverpod. Built the mobile code review process the mobile org still uses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open source -->
+  <section id="projects" class="pb-16">
+    <div class="container-custom">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-4">Things I build outside the day job</h2>
+      <p class="text-[var(--text-secondary)] text-base max-w-2xl mb-8">
+        I build tools because I encounter engineering problems and want to solve them, not because a job description says so.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-0 animate-slide-up stagger-2">
+      <div class="divide-y divide-[var(--border)]">
         {projects.map((p) => (
-          <a href={p.url} target="_blank" rel="noopener" class="card group flex flex-col h-full">
-            <div class="flex items-center justify-between mb-2">
-              <h3 class="text-lg font-semibold group-hover:text-[var(--accent)] transition-colors">{p.name}</h3>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[var(--text-muted)] group-hover:text-[var(--accent)] transform group-hover:translate-x-1 transition-all">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+          <div class="entry">
+            <div class="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-x-8 gap-y-1">
+              <a href={p.url} target="_blank" rel="noopener" class="hover-link font-mono text-sm font-medium self-baseline">
+                {p.name}
+              </a>
+              <p class="text-[var(--text-secondary)] text-sm">{p.problem} {p.built}</p>
             </div>
-            <p class="text-[var(--text-muted)] text-sm mb-2">{p.problem}</p>
-            <p class="text-[var(--text-secondary)] text-sm">{p.built}</p>
-          </a>
+          </div>
         ))}
       </div>
-      <a href="https://github.com/AgiMaulana?tab=repositories" target="_blank" rel="noopener" class="opacity-0 animate-slide-up stagger-3 inline-flex items-center gap-2 mt-8 text-[var(--accent)] hover:underline">
-        All GitHub projects
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="transform group-hover:translate-x-1 transition-transform">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
+      <p class="mt-8">
+        <a href="https://github.com/AgiMaulana?tab=repositories" target="_blank" rel="noopener" class="hover-link text-sm">All GitHub repositories</a>
+      </p>
     </div>
   </section>
 
-  <!-- Engineering Principles -->
-  <section id="principles" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-3xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">Engineering Principles</h2>
-      <ul class="space-y-4 opacity-0 animate-slide-up stagger-1">
-        <li class="flex items-start gap-3">
-          <span class="text-[var(--accent)] mt-1">→</span>
-          <p class="text-[var(--text-secondary)]">Good architecture should make the next engineer faster.</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[var(--accent)] mt-1">→</span>
-          <p class="text-[var(--text-secondary)]">Leadership should increase team autonomy, not dependency on the leader.</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[var(--accent)] mt-1">→</span>
-          <p class="text-[var(--text-secondary)]">Processes should create visibility, not bureaucracy.</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[var(--accent)] mt-1">→</span>
-          <p class="text-[var(--text-secondary)]">Technical debt needs ownership, not just documentation.</p>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-[var(--accent)] mt-1">→</span>
-          <p class="text-[var(--text-secondary)]">The best engineering standards are the ones the team can actually sustain.</p>
-        </li>
+  <!-- Principles -->
+  <section id="principles" class="pb-16">
+    <div class="container-prose">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-8">Engineering principles</h2>
+      <ul class="space-y-3 text-[var(--text-secondary)]">
+        <li>Good architecture should make the next engineer faster.</li>
+        <li>Leadership should increase team autonomy, not dependency on the leader.</li>
+        <li>Processes should create visibility, not bureaucracy.</li>
+        <li>Technical debt needs ownership, not just documentation.</li>
+        <li>The best engineering standards are the ones the team can actually sustain.</li>
       </ul>
     </div>
   </section>
 
-  <!-- Currently / roles targeting -->
-  <section id="currently" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-3xl">
-      <h2 class="text-3xl font-bold mb-10 opacity-0 animate-slide-up">What I'm interested in</h2>
-      <p class="text-lg text-[var(--text-secondary)] mb-6 opacity-0 animate-slide-up stagger-1">
+  <!-- Interested in -->
+  <section id="currently" class="pb-16">
+    <div class="container-prose">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-6">What I'm interested in</h2>
+      <p class="text-[var(--text-secondary)] mb-4">
         I'm interested in engineering roles where I can stay close to technology while expanding my impact through technical leadership and team leadership.
       </p>
-      <div class="flex flex-wrap gap-2 opacity-0 animate-slide-up stagger-2 mb-8">
-        {roles.map((r) => (
-          <span class="px-3 py-1.5 rounded-lg bg-[var(--bg-secondary)] border border-[var(--border)] text-sm">{r}</span>
-        ))}
-      </div>
-      <p class="text-[var(--text-muted)] opacity-0 animate-slide-up stagger-3">
-        Currently: building MCP servers for Google Play, Huawei AppGallery, Codemagic, and Sentry — turning developer infrastructure into things AI agents can operate directly.
+      <p class="text-[var(--text-secondary)] mb-4">Roles where that fits:</p>
+      <ul class="list-disc list-inside text-[var(--text-secondary)] mb-6 space-y-1">
+        <li>Senior Android Engineer</li>
+        <li>Lead Android Engineer</li>
+        <li>Staff / Principal Android Engineer</li>
+        <li>Mobile Engineering Manager</li>
+      </ul>
+      <p class="text-[var(--text-muted)] text-sm">
+        Currently: building MCP servers for Google Play, Huawei AppGallery, Codemagic, and Sentry, turning developer infrastructure into things AI agents can operate directly.
       </p>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 border-t border-[var(--border)]">
-    <div class="container-custom max-w-3xl">
-      <h2 class="text-3xl font-bold mb-4 opacity-0 animate-slide-up">Contact</h2>
-      <p class="text-lg text-[var(--text-secondary)] mb-8 opacity-0 animate-slide-up stagger-1">
+  <section id="contact" class="pb-24">
+    <div class="container-prose">
+      <hr class="rule mb-10" />
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <p class="text-[var(--text-secondary)] mb-6">
         Interested in building great engineering teams and products together?
       </p>
-      <div class="flex flex-wrap gap-4 opacity-0 animate-slide-up stagger-2">
-        <a href="mailto:agimaulana.dex@gmail.com" class="btn-primary">Email</a>
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:agimaulana.dex@gmail.com" class="btn-primary">Email me</a>
         <a href="https://www.linkedin.com/in/agimaulana/" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
         <a href="https://github.com/AgiMaulana" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
       </div>

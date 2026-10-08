@@ -39,7 +39,7 @@ const fullTitle = title === "Agi Maulana - Senior Android Engineer & Mobile Engi
     <meta name="title" content={fullTitle} />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
-    <meta name="theme-color" content="#8b5cf6" />
+    <meta name="theme-color" content="#fafaf9" />
     <link rel="canonical" href={canonicalUrl} />
 
     <!-- Favicon -->
@@ -114,6 +114,17 @@ const fullTitle = title === "Agi Maulana - Senior Android Engineer & Mobile Engi
     })} />
   </head>
   <body class="min-h-screen flex flex-col">
+    <script is:inline>
+      // Apply theme before first paint: saved choice, else system preference, else dark.
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        var dark = saved === 'dark' || saved === 'light'
+          ? saved === 'dark'
+          : !window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.classList.toggle('dark', dark);
+      })();
+    </script>
     <Header />
     <main class="flex-1">
       <slot />
